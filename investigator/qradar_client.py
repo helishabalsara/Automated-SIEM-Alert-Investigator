@@ -36,7 +36,7 @@ class QRadarClient:
     def get_offenses(self, limit: int = 50, status: str = "OPEN") -> List[dict]:
         """Return a list of QRadar offenses."""
         params = {
-            "filter": f"status={status}",
+            "filter": f'status="{status}"',
             "fields": "id,description,offense_type,offense_source,magnitude,severity,status,start_time,last_updated_time,category_count,event_count,source_address_ids,local_destination_address_ids",
             "range": f"0-{limit - 1}",
             "sort": "-magnitude",
