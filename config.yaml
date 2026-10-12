@@ -1,0 +1,21 @@
+qradar:
+  host: https://your-qradar-host
+  api_token: YOUR_QRADAR_API_TOKEN
+  verify_ssl: false
+  offense_limit: 50
+  # Only fetch offenses with status: OPEN or HIDDEN
+  status_filter: OPEN
+
+threat_intel:
+  virustotal_api_key: ""    # https://www.virustotal.com/gui/my-apikey
+  abuseipdb_api_key: ""     # https://www.abuseipdb.com/account/api
+  otx_api_key: ""           # https://otx.alienvault.com/settings
+
+output:
+  directory: triage_cards/
+  format: json              # json only for now
+  verbose: false
+
+polling:
+  enabled: false
+  interval_seconds: 300

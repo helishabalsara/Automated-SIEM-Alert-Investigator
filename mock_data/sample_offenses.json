@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1042,
+    "description": "Multiple Login Failures Followed by Success from External IP",
+    "offense_type": 0,
+    "offense_type_str": "Source IP",
+    "offense_source": "203.0.113.42",
+    "_resolved_source_ips": ["203.0.113.42"],
+    "magnitude": 8,
+    "severity": 8,
+    "status": "OPEN",
+    "event_count": 256,
+    "category": "Authentication",
+    "start_time": 1731657781000,
+    "last_updated_time": 1731661381000,
+    "source_address_ids": []
+  },
+  {
+    "id": 1043,
+    "description": "Possible Port Scan Activity Detected from External Host",
+    "offense_type": 0,
+    "offense_type_str": "Source IP",
+    "offense_source": "198.51.100.77",
+    "_resolved_source_ips": ["198.51.100.77"],
+    "magnitude": 6,
+    "severity": 6,
+    "status": "OPEN",
+    "event_count": 512,
+    "category": "Reconnaissance",
+    "start_time": 1731660000000,
+    "last_updated_time": 1731661200000,
+    "source_address_ids": []
+  },
+  {
+    "id": 1044,
+    "description": "Ransomware Indicators: Rapid File Encryption Activity Detected",
+    "offense_type": 1,
+    "offense_type_str": "Username",
+    "offense_source": "jsmith",
+    "_resolved_source_ips": ["10.0.0.45"],
+    "magnitude": 10,
+    "severity": 10,
+    "status": "OPEN",
+    "event_count": 1024,
+    "category": "Malware",
+    "start_time": 1731655200000,
+    "last_updated_time": 1731661500000,
+    "source_address_ids": []
+  }
+]
